@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ancMain" prefHeight="429.0" prefWidth="650.0" stylesheets="@../../css/Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceautomationsystem.gui.controller.teacher.TeacherStudentViewController">
+   <children>
+      <StackPane layoutY="2.0" prefHeight="73.0" prefWidth="650.0">
+         <children>
+            <Label fx:id="lblStudentName" text="Pedas Swacheneker" textFill="#515151">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="290.0" layoutX="26.0" layoutY="125.0" stroke="WHITE" strokeMiterLimit="30.0" strokeType="INSIDE" strokeWidth="17.0" width="598.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="39.0" layoutX="27.0" layoutY="81.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="598.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="290.0" layoutX="599.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+      <ListView fx:id="lstAbsence" editable="true" layoutX="34.0" layoutY="131.0" prefHeight="282.0" prefWidth="589.0" />
+      <ListView fx:id="lstPresence" editable="true" layoutX="34.0" layoutY="131.0" prefHeight="282.0" prefWidth="589.0" visible="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="290.0" layoutX="36.0" layoutY="135.0" stroke="#ffffff00" strokeMiterLimit="30.0" strokeType="INSIDE" strokeWidth="17.0" width="561.0" />
+      <Button layoutX="610.0" mnemonicParsing="false" onAction="#clickClose" prefHeight="30.0" prefWidth="40.0" styleClass="buttonClose" />
+      <ToggleButton layoutX="27.0" layoutY="88.0" mnemonicParsing="false" onAction="#clickAbsence" selected="true" styleClass="toggleTab" text="Absence Days">
+         <toggleGroup>
+            <ToggleGroup fx:id="tab" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton layoutX="178.0" layoutY="88.0" mnemonicParsing="false" onAction="#clickPresence" styleClass="toggleTab" text="Presence Days" toggleGroup="$tab" />
+   </children>
+</AnchorPane>

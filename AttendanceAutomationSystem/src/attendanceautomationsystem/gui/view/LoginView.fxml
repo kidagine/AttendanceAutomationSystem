@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendanceautomationsystem.gui.controller.LoginViewController">
+   <children>
+      <StackPane fx:id="stcMain" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Logo.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="400.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <StackPane fx:id="stcCredentials" maxHeight="200.0">
+                     <children>
+                        <JFXTextField fx:id="txtUsername" focusColor="#009fe3" maxWidth="300.0" prefWidth="300.0" promptText="Username">
+                           <font>
+                              <Font name="Montserrat Light" size="12.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="txtPassword" focusColor="#009fe3" maxWidth="300.0" prefWidth="300.0" promptText="Password">
+                           <font>
+                              <Font name="Montserrat Light" size="12.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets top="80.0" />
+                           </StackPane.margin>
+                        </JFXPasswordField>
+                     </children>
+                     <StackPane.margin>
+                        <Insets bottom="200.0" />
+                     </StackPane.margin>
+                  </StackPane>
+                  <Label prefHeight="60.0" prefWidth="300.0" text="Remember me" textFill="#5e5e5e">
+                     <font>
+                        <Font name="Montserrat Light" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="15.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <JFXToggleButton fx:id="tglRememberMe" prefHeight="60.0" prefWidth="300.0" text=" " toggleColor="#fafafa" toggleLineColor="#009fe3" unToggleLineColor="#4d4d4d">
+                     <padding>
+                        <Insets left="270.0" />
+                     </padding>
+                     <StackPane.margin>
+                        <Insets bottom="15.0" />
+                     </StackPane.margin>
+                  </JFXToggleButton>
+                  <JFXButton fx:id="btnLogin" onAction="#clickLogin" prefHeight="35.0" prefWidth="300.0" ripplerFill="WHITE" styleClass="loginbutton" text="Log In">
+                     <font>
+                        <Font name="Montserrat Bold" size="15.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets top="170.0" />
+                     </StackPane.margin>
+                  </JFXButton>
+                  <StackPane fx:id="stcErrorMessage" maxHeight="50.0" prefHeight="150.0" prefWidth="200.0" visible="false">
+                     <StackPane.margin>
+                        <Insets top="80.0" />
+                     </StackPane.margin>
+                     <children>
+                        <Label fx:id="lblErrorMessage" prefHeight="33.0" prefWidth="246.0" text="The username or password is incorrect." textFill="RED">
+                           <font>
+                              <Font name="Montserrat Light" size="11.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <StackPane.margin>
+                              <Insets right="280.0" />
+                           </StackPane.margin>
+                           <image>
+                              <Image url="@../images/error.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

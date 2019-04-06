@@ -1,0 +1,350 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-Mar-2019, 13:50:37
+    Author     : Acer
+*/
+
+.loginbutton{
+    -fx-font-family: "Montserrat Medium";
+    -fx-font-size: 14;
+    -fx-text-fill:white;
+    -fx-background-color:#5198fb;
+
+}
+
+.loginbutton:hover {
+    -fx-font-family: "Montserrat Medium";
+    -fx-font-size: 14;
+    -fx-background-color: #60a0ff;
+}
+
+.loginbutton:selected {
+    
+}
+
+.toggleTab {
+    -fx-background-color:transparent;
+    -fx-font-family: "Montserrat Medium";
+    -fx-font-size: 16;
+    -fx-text-fill:black;
+}
+
+.toggleTab:hover {
+    -fx-font-family: "Montserrat Medium";
+    -fx-font-size: 16;
+    -fx-text-fill:#7b7b7b;
+}
+
+.toggleTab:selected {
+    -fx-font-family: "Montserrat Medium";
+    -fx-font-size: 16;
+    -fx-text-fill:#5198fb;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color:#5198fb;
+    -fx-border-insets:0 0 -3 0;
+}
+
+.credentialFieldIncorrect
+{
+    -jfx-focus-color: red;
+}
+
+.credentialFieldIncorrect .input-line
+{
+    -fx-background-color: red;
+}
+
+.buttonClose{
+    -fx-background-radius: 0;
+    -fx-background-color: #b1b1b1;   
+    -fx-background-image: url("../images/CancelView.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:8 8;  
+}
+.buttonClose:hover{
+    -fx-background-color: #dd0832;
+    -fx-background-image: url("../images/CancelView.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:center;
+    -fx-background-size:8 8;
+}
+.buttonClose:pressed{
+    -fx-background-color:#dd6666;
+}
+
+.buttonText {
+    -fx-background-color:transparent;
+    -fx-text-fill: #5e5e5e;
+}
+.buttonText:hover {
+    -fx-underline: true;
+}
+.buttonText:pressed{
+    -fx-text-fill: #090909
+}
+
+.topbar {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 1.5 0;
+    -fx-border-color: #a1a1a1;
+}
+
+.buttonCourse{
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 18;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color:#f4f4f4;
+    -fx-border-color:#f4f4f4;
+    -fx-border-width:2;
+}
+.buttonCourse .jfx-rippler{
+      -jfx-rippler-fill:#f1f1f1;
+}
+.buttonCourse:hover{
+    -fx-font-size: 18;
+    -fx-border-color:#5198fb;
+}
+.buttonCourse:pressed{
+    -fx-font-size: 17;
+    -fx-background-color:white;
+    -fx-border-color:#5198fb;
+    -fx-border-width:3;
+}
+
+.buttonMyCourses{
+    -fx-font-family: "Montserrat Medium";
+    -fx-background-color: transparent;
+    -fx-font-size: 19;
+    -fx-padding:3 5 5 20;
+    -fx-background-size:20 20;
+    -fx-background-image: url("../images/arrowleft.png");
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:left center;
+    -fx-background-size:18 18;
+}
+.buttonMyCourses:hover{
+    -fx-font-size: 19;
+    -fx-padding:3 5 5 20;
+    -fx-background-size:20 20;
+}
+
+.scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+.scroll-bar:horizontal{
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+}
+.scroll-bar:horizontal{
+    -fx-padding:-7;
+}
+
+.scroll-bar .thumb{
+    -fx-background-color:derive(#828282, 50%);
+}
+.scroll-bar .thumb:hover{
+    -fx-background-color:derive(#828282, 70%);
+}
+
+.calendarleftarrow{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/arrowleftcalendar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 16 16;
+
+}
+
+.calendarleftarrow:hover {
+    -fx-background-size: 20 20;
+}
+
+.calendarrightarrow{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/arrowrightcalendar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 16 16;
+
+}
+
+.calendarrightarrow:hover {
+    -fx-background-size: 20 20;
+}
+
+.calendarbutton{
+    -fx-background-color:transparent;     
+    -fx-text-fill: #5e5e5e;
+    -fx-font-size: 16;
+    -fx-alignment:TOP_RIGHT;
+}
+
+.table-view{
+    -fx-font-family: "Montserrat Light";
+    -fx-font-size: 16;
+    -fx-table-cell-border-color:transparent;
+    -fx-background-color: white;
+    -fx-control-inner-background-alt: -fx-control-inner-background ;
+}
+
+.table-row-cell{
+    -fx-background-color: transparent, -fx-background ;
+    -fx-background-insets: 0px, 0.5px ;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler{
+    -fx-background-color:white; 
+}
+
+.table-view .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.table-view .scroll-bar:horizontal{
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+}
+
+.table-view .scroll-bar:horizontal{
+    -fx-padding:-7;
+}
+
+.table-view .scroll-bar .thumb{
+    -fx-background-color:#c4c4c4;
+}
+
+.table-view .increment-button:hover ,.text-area .decrement-button:hover{
+    -fx-background-color:transparent;
+}
+
+.table-view .track{
+    -fx-background-color:transparent;
+}
+
+.table-view{
+    -fx-background-color:transparent;
+
+}
+
+.table-view:focused{
+    -fx-background-color:transparent;
+}
+
+.table-view .column{
+    -fx-background-color:transparent;
+}
+
+.table-view .column-header-background .label{
+    -fx-font-family: "Montserrat Medium";
+    -fx-alignment:top-left;
+    -fx-background-color:transparent;
+
+}
+
+.table-row-cell{
+    -fx-cell-size: 33px;
+    -fx-text-background-color:black;
+    -fx-font-weight:bold;
+    -fx-table-cell-border-color:transparent;
+    -fx-font-size:14;
+    -fx-font-family: "Montserrat Medium";
+    -fx-text-background-color: #4d4d4d;
+
+}
+
+.table-view .cell{
+  -fx-alignment: center-left;
+  -fx-alignment: CENTER_LEFT;
+   
+}
+
+.table-row-cell:selected{
+    -fx-background-color:#f4f4f4;
+}
+
+.table-row-cell:hover{
+    -fx-background-color:#dddddd;
+}
+
+.table-view:focused{
+    -fx-table-cell-border-color:transparent;
+}
+
+.list-view {
+    -fx-font-family: "Montserrat Light";
+    -fx-font-size: 16;
+    -fx-background-color:transparent ;
+}
+
+.list-cell {
+    -fx-padding: 7px ;
+    -fx-background-color: transparent, -fx-background ;
+    -fx-background-insets: 0px, 1px ;
+}
+
+.list-cell:empty {
+    -fx-padding: 7px ;
+    -fx-background-color: transparent, -fx-background ;
+    -fx-background-insets: 0px, 1px ;
+}
+
+.list-view .list-cell {
+    -fx-text-fill: black;
+}
+
+.list-view .label {
+    -fx-text-fill: white;
+}
+.list-cell:odd {
+    -fx-background-color: white;
+
+} 
+
+
+.list-view .track{
+    -fx-background-color:transparent;
+}
+.list-view .scroll-bar:vertical{
+    -fx-background-color:transparent; 
+}
+.list-view .increment-button:hover ,.text-area .decrement-button:hover{
+    -fx-background-color:transparent;
+}
+.list-view .scroll-bar .thumb{
+    -fx-background-color:#cfcfcf;
+}
+.list-view .scroll-bar .thumb:hover{
+    -fx-background-color:#ababab;
+}
+.list-view .increment-button:hover ,.text-area .decrement-button:hover{
+    -fx-background-color:transparent;
+}
+.list-view .track{
+    visibility: hidden;
+}
+
+.data0.chart-pie { -fx-pie-color: #80e5a6; }
+.data1.chart-pie { -fx-pie-color: #ee898c; }
+
+.chart-pie {
+    -fx-border-color: #e9e9e9;
+}
+
+.chart-legend { 
+    -fx-font-family: "Montserrat Medium";
+    -fx-font-size: 10;
+    -fx-background-color: transparent; 
+}
+
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}
+
+
